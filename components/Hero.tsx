@@ -1,0 +1,167 @@
+import React from 'react';
+import { Search, Menu, ArrowRight, Phone, Play, Star, ArrowUpRight } from 'lucide-react';
+
+export const Hero: React.FC = () => {
+  return (
+    <div className="bg-brand-darker min-h-screen relative overflow-hidden text-white font-sans selection:bg-brand-dark selection:text-white">
+      {/* Background Geometric Elements (Subtle) */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] border border-white/5 rounded-full" />
+        <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] border border-white/5 rounded-full" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[800px] h-[800px] border border-white/5 rounded-full" />
+      </div>
+
+      {/* Navigation */}
+      <nav className="relative z-50 max-w-[1400px] mx-auto px-6 py-8 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+           {/* Logo Icon */}
+           <div className="w-5 h-5 relative">
+             <ArrowUpRight className="text-white w-full h-full" strokeWidth={3} />
+           </div>
+           <span className="text-xl font-bold tracking-wide">FINXPERT.</span>
+        </div>
+
+        <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+          <a href="#" className="text-white flex items-center gap-1">HOME <span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">PAGES <span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">SERVICES <span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">PORTFOLIO <span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">BLOG <span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors">CONTACT</a>
+        </div>
+
+        <div className="hidden lg:flex items-center gap-6">
+          <button className="px-6 py-2.5 rounded-full border border-white/20 hover:bg-white/10 transition-colors text-xs font-semibold tracking-wider flex items-center gap-2 group">
+            GET IN TOUCH 
+            <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+          </button>
+          <button className="text-white hover:opacity-80">
+            <Search className="w-5 h-5" />
+          </button>
+          <button className="text-white hover:opacity-80">
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button className="lg:hidden text-white">
+          <Menu className="w-6 h-6" />
+        </button>
+      </nav>
+
+      {/* Main Content */}
+      <div className="max-w-[1400px] mx-auto px-6 pt-12 lg:pt-20 pb-20 flex flex-col lg:flex-row items-center relative z-10">
+        
+        {/* Left Text Content */}
+        <div className="w-full lg:w-1/2 mb-16 lg:mb-0 lg:pr-12">
+          <span className="block text-gray-400 text-xs font-bold tracking-[0.2em] uppercase mb-6">
+            Financial Futures
+          </span>
+          
+          <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1] mb-8">
+            <span className="text-white">Smart Strategies</span> <br />
+            <span className="text-white/30">for Wealth Growth</span> <br />
+            <span className="text-white">Financiers.</span>
+          </h1>
+          
+          <p className="text-gray-400 text-lg leading-relaxed max-w-xl mb-12">
+            Achieving long-term financial success requires smart strategies for wealth growth, guided by expert financiers.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            {/* Google Play Button */}
+            <button className="flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3 transition-all">
+              <div className="w-8 h-8 flex items-center justify-center">
+                 {/* Simple Play Icon to represent Google Play store */}
+                 <Play className="w-6 h-6 fill-white text-white" />
+              </div>
+              <div className="text-left">
+                <div className="text-[10px] uppercase font-medium text-gray-300 leading-none mb-1">Android App on</div>
+                <div className="text-sm font-bold text-white leading-none">Google Play</div>
+              </div>
+            </button>
+
+            {/* Phone Button */}
+            <button className="flex items-center gap-3 bg-white hover:bg-gray-100 rounded-full px-6 py-3 transition-colors text-brand-darker">
+              <div className="w-10 h-10 rounded-full bg-brand-darker flex items-center justify-center text-white">
+                <Phone className="w-4 h-4" />
+              </div>
+              <span className="text-lg font-bold">+(528) 456-7592</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Right Image/Cards Content */}
+        <div className="w-full lg:w-1/2 relative h-[600px] lg:h-[700px] flex items-end justify-center lg:justify-end">
+          
+          {/* Main Character Image */}
+          <div className="relative z-10 h-[90%] w-auto">
+             <img 
+               src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800" 
+               alt="Financial Expert" 
+               className="h-full w-auto object-cover object-top mask-image-b-fade rounded-b-3xl"
+               style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
+             />
+          </div>
+
+          {/* Floating Card 1: Success Project (Top Left) */}
+          <div className="absolute top-[15%] left-0 lg:left-[5%] bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl w-64 z-20">
+            <div className="flex gap-1 mb-4 text-white">
+              <Star className="w-4 h-4 fill-white" />
+              <Star className="w-4 h-4 fill-white" />
+              <Star className="w-4 h-4 fill-white" />
+              <Star className="w-4 h-4 fill-white" />
+              <Star className="w-4 h-4 fill-white/50 text-white/50" />
+            </div>
+            <p className="text-white text-sm font-medium leading-relaxed mb-4">
+              We completed 85% success project in business
+            </p>
+            {/* Tiny Graph Decoration */}
+            <div className="h-8 flex items-end gap-1 opacity-50">
+              <div className="w-2 bg-white/40 h-[40%] rounded-t-sm"></div>
+              <div className="w-2 bg-white/60 h-[70%] rounded-t-sm"></div>
+              <div className="w-2 bg-white/80 h-[50%] rounded-t-sm"></div>
+              <div className="w-2 bg-white h-[90%] rounded-t-sm"></div>
+              <div className="w-2 bg-white/70 h-[60%] rounded-t-sm"></div>
+            </div>
+          </div>
+
+          {/* Floating Card 2: Specialist (Top Right) */}
+          <div className="absolute top-[20%] right-0 lg:right-[-2%] bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl w-56 z-0">
+             <div className="mb-1 text-4xl font-bold text-white/90">4.7k</div>
+             <div className="text-white font-medium">A+ Specialist</div>
+             {/* Background Decoration */}
+             <div className="absolute inset-0 z-[-1] opacity-10 flex items-end justify-between px-4 pb-2">
+                <div className="w-2 bg-white h-12"></div>
+                <div className="w-2 bg-white h-20"></div>
+                <div className="w-2 bg-white h-16"></div>
+                <div className="w-2 bg-white h-24"></div>
+             </div>
+          </div>
+
+          {/* Floating Card 3: Pie Chart (Bottom Right) */}
+          <div className="absolute bottom-[10%] right-0 lg:right-[10%] bg-white p-5 rounded-3xl shadow-2xl z-30 w-72">
+            <div className="flex gap-4 mb-4 text-[10px] font-medium text-gray-500">
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-darker"></span> Invest</div>
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-400"></span> Goal</div>
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-200"></span> Finance</div>
+            </div>
+            <div className="relative w-40 h-40 mx-auto">
+               {/* SVG Pie Chart */}
+               <svg viewBox="0 0 100 100" className="transform -rotate-90 w-full h-full">
+                 <circle cx="50" cy="50" r="40" fill="transparent" stroke="#E5E7EB" strokeWidth="20" /> {/* Background Gray */}
+                 <circle cx="50" cy="50" r="40" fill="transparent" stroke="#9CA3AF" strokeWidth="20" strokeDasharray="60 251.2" strokeDashoffset="0" /> {/* Medium Gray Segment */}
+                 <circle cx="50" cy="50" r="40" fill="transparent" stroke="#1A3330" strokeWidth="20" strokeDasharray="80 251.2" strokeDashoffset="-60" /> {/* Dark Green Segment */}
+               </svg>
+               {/* Center Hole for Donut */}
+               <div className="absolute inset-0 flex items-center justify-center">
+                 <div className="w-20 h-20 bg-white rounded-full"></div>
+               </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+};
