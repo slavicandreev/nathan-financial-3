@@ -97,7 +97,7 @@ export const Hero: React.FC = () => {
           {/* Main Character Image */}
           <div className="relative z-10 h-[90%] w-auto">
              <img 
-               src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800" 
+               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" 
                alt="Financial Expert" 
                className="h-full w-auto object-cover object-top mask-image-b-fade rounded-b-3xl"
                style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
