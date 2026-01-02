@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Menu, ArrowRight, Phone, Star, ArrowUpRight } from 'lucide-react';
+import { Search, Menu, ArrowRight, Phone, Play, Star, ArrowUpRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -118,27 +118,14 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Floating Card 2: Specialist (Top Right) */}
-          <div className="absolute top-[20%] right-0 lg:right-[-2%] bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl w-56 z-0">
-             <div className="mb-1 text-4xl font-bold text-white/90">4.7k</div>
-             <div className="text-white font-medium">A+ Specialist</div>
-             {/* Background Decoration */}
-             <div className="absolute inset-0 z-[-1] opacity-10 flex items-end justify-between px-4 pb-2">
-                <div className="w-2 bg-white h-12"></div>
-                <div className="w-2 bg-white h-20"></div>
-                <div className="w-2 bg-white h-16"></div>
-                <div className="w-2 bg-white h-24"></div>
-             </div>
-          </div>
-
           {/* Floating Card 3: Pie Chart (Bottom Right) */}
-          <div className="absolute bottom-[10%] right-0 lg:right-[10%] bg-white p-5 rounded-3xl shadow-2xl z-30 w-72">
-            <div className="flex gap-4 mb-4 text-[10px] font-medium text-gray-500">
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-darker"></span> 401K</div>
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-400"></span> RSU</div>
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-200"></span> ESPP</div>
+          <div className="absolute bottom-[10%] right-0 lg:right-[10%] bg-white p-4 rounded-2xl shadow-2xl z-30 w-56">
+            <div className="flex gap-2 mb-3 justify-center text-[10px] font-medium text-gray-500">
+               <div className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-brand-darker"></span> 401K</div>
+               <div className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span> RSU</div>
+               <div className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-gray-200"></span> ESPP</div>
             </div>
-            <div className="relative w-40 h-40 mx-auto">
+            <div className="relative w-32 h-32 mx-auto">
                {/* SVG Pie Chart */}
                <svg viewBox="0 0 100 100" className="transform -rotate-90 w-full h-full">
                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#E5E7EB" strokeWidth="20" /> {/* Background Gray */}
@@ -147,7 +134,7 @@ export const Hero: React.FC = () => {
                </svg>
                {/* Center Hole for Donut */}
                <div className="absolute inset-0 flex items-center justify-center">
-                 <div className="w-20 h-20 bg-white rounded-full"></div>
+                 <div className="w-16 h-16 bg-white rounded-full"></div>
                </div>
             </div>
           </div>
