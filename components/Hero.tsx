@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Floating Card 1: Success Project (Top Left) */}
-          <div className="absolute top-[15%] left-0 lg:left-[5%] bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl w-64 z-20">
+          <div className="absolute top-[55%] left-0 lg:left-[5%] bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl w-64 z-20">
             <div className="flex gap-1 mb-4 text-white">
               <Star className="w-4 h-4 fill-white" />
               <Star className="w-4 h-4 fill-white" />
