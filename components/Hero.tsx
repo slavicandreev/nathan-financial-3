@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Menu, ArrowRight, Phone, Star, ArrowUpRight } from 'lucide-react';
+import { Search, Menu, ArrowRight, Phone, Play, Star, ArrowUpRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
           {/* Main Character Image */}
           <div className="relative z-10 h-[90%] w-auto">
              <img 
-               src="https://slavicandreev.github.io/nathan-financial-3/images/nathan-background.jpg" 
+               src="images/nathan-background.jpg" 
                alt="Financial Expert" 
                className="h-full w-auto object-cover object-top mask-image-b-fade rounded-b-3xl"
                style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
