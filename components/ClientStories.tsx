@@ -3,68 +3,81 @@ import { Star, Quote } from 'lucide-react';
 
 export const ClientStories: React.FC = () => {
   return (
-    <section className="bg-white py-20 lg:py-32 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+    <section className="bg-white py-20 lg:py-32 overflow-hidden relative">
+      {/* Background Gradient Effect */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#E8F0EF] to-transparent rounded-full blur-3xl opacity-50 pointer-events-none translate-x-1/3 -translate-y-1/4" />
+
+      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center lg:items-end gap-16 lg:gap-24">
           
-          {/* Left: Image with Rating */}
-          <div className="w-full lg:w-1/2 relative">
-             <div className="relative z-10">
+          {/* Left Column: Image & Stats */}
+          <div className="w-full lg:w-[35%] relative">
+             <div className="relative">
+                {/* Main Image */}
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 
-                  alt="Client Success" 
-                  className="w-full max-w-md mx-auto lg:max-w-none rounded-none grayscale hover:grayscale-0 transition-all duration-500"
+                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400&h=400" 
+                  alt="Client Working" 
+                  className="w-full h-auto object-cover rounded-none mask-image-b-fade" 
+                  style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
                 />
                 
-                {/* Rating Badge */}
-                <div className="absolute bottom-10 left-0 lg:-left-10 bg-white p-6 shadow-xl flex items-baseline gap-2 max-w-[280px]">
-                   <span className="text-6xl font-bold text-brand-dark">4.7</span>
-                   <div className="flex flex-col gap-1">
-                      <div className="flex gap-1">
-                        {[1, 2, 3, 4, 5].map((i) => (
-                           <Star key={i} className="w-4 h-4 fill-[#7B9591] text-[#7B9591]" />
-                        ))}
-                      </div>
-                      <span className="text-xs text-gray-400 font-medium">Customer Rating</span>
-                   </div>
+                {/* Rating Block Overlay */}
+                <div className="relative lg:absolute lg:bottom-0 lg:left-0 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-white max-w-xs mt-[-40px] lg:mt-0 lg:translate-y-1/4">
+                    <div className="flex items-end gap-3 mb-4">
+                        <span className="text-6xl font-bold text-[#2C4A45] leading-[0.8]">4.7</span>
+                        <div className="flex gap-1 pb-1">
+                           {[1, 2, 3, 4, 5].map((i) => (
+                              <Star key={i} className="w-4 h-4 fill-[#7B9591] text-[#7B9591]" />
+                           ))}
+                        </div>
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+                       Client Success: Highlight how your firm helped clients
+                    </h3>
+                    
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                       Full range of consultancy & training for data consultation strategic ways for business.
+                    </p>
+                </div>
+             </div>
+          </div>
+
+          {/* Right Column: Content */}
+          <div className="w-full lg:w-[60%] pb-0 lg:pb-12">
+             <div className="mb-2">
+                <span className="text-xs font-bold tracking-[0.2em] text-[#7B9591] uppercase">
+                    Client Stories
+                </span>
+             </div>
+             
+             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 border-b border-gray-100 pb-10 mb-10">
+                <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 leading-[1.1] max-w-md">
+                   FAANG Vice President Saves $320,000+ in Taxes on RSUs and ESPP
+                </h2>
+
+                {/* Carousel Indicators */}
+                <div className="flex gap-2 mb-2 lg:mb-4">
+                   <div className="w-8 h-1 bg-[#5D7E79] rounded-full"></div>
+                   <div className="w-8 h-1 bg-gray-200 rounded-full"></div>
+                   <div className="w-8 h-1 bg-gray-200 rounded-full"></div>
                 </div>
              </div>
              
-             {/* Decorative blob/gradient behind */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-brand-light to-transparent rounded-full opacity-50 z-0 pointer-events-none blur-3xl" />
-          </div>
-
-          {/* Right: Content */}
-          <div className="w-full lg:w-1/2">
-             <span className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-4 block">
-                Client Stories
-             </span>
-             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-10 leading-[1.1]">
-                Achieving Financial Goals Together
-             </h2>
-
-             {/* Carousel Indicators */}
-             <div className="flex gap-2 mb-10">
-                <div className="w-8 h-1.5 bg-brand-dark rounded-full"></div>
-                <div className="w-8 h-1.5 bg-gray-200 rounded-full"></div>
-                <div className="w-8 h-1.5 bg-gray-200 rounded-full"></div>
-             </div>
-             
              <div className="relative">
-                <Quote className="absolute -top-6 -right-6 w-32 h-32 text-gray-100 -z-10 rotate-180" />
-                <p className="text-gray-500 text-lg leading-relaxed mb-8">
-                   Partnering with this financial consulting team was a game-changer for our business. Their expert guidance on cash flow management and budgeting helped us optimize resources and improve profitability.
+                {/* Outline Quote Icon */}
+                <div className="absolute top-0 right-0 opacity-20">
+                    <Quote className="w-32 h-32 text-gray-400 rotate-180 fill-transparent stroke-[1px]" />
+                </div>
+                
+                <p className="text-gray-500 text-lg leading-relaxed mb-10 relative z-10 max-w-xl">
+                   Partnering with Nathan was a game-changer. His expert guidance on cash flow management and budgeting helped us optimize resources and improve profitability.
                 </p>
                 
                 <div className="flex items-center gap-4">
-                   <img 
-                      src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100" 
-                      alt="Jesonal Jelins" 
-                      className="w-12 h-12 rounded-full object-cover"
-                   />
                    <div>
-                      <h4 className="text-brand-dark font-bold text-lg">Jesonal Jelins</h4>
-                      <p className="text-gray-400 text-sm">Team Captain</p>
+                      <h4 className="text-[#2C4A45] font-bold text-lg">Jennifer Fox</h4>
+                      <p className="text-gray-400 text-sm">VP, Google</p>
                    </div>
                 </div>
              </div>

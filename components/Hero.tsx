@@ -69,9 +69,7 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             {/* Google Play Button */}
             <button className="flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3 transition-all">
-              <div className="text-left">
-                <div className="text-sm font-bold text-white leading-none">GET IN TOUCH <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></div>
-              </div>
+                <div className="text-sm font-bold text-white leading-none">GET IN TOUCH&nbsp;<ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></div>
             </button>
 
             {/* Phone Button */}
@@ -90,7 +88,7 @@ export const Hero: React.FC = () => {
           {/* Main Character Image */}
           <div className="relative z-10 h-[90%] w-auto">
              <img 
-               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" 
+               src="https://slavicandreev.github.io/nathan-financial-3/images/nathan-background.jpg" 
                alt="Financial Expert" 
                className="h-full w-auto object-cover object-top mask-image-b-fade rounded-b-3xl"
                style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
@@ -104,10 +102,11 @@ export const Hero: React.FC = () => {
               <Star className="w-4 h-4 fill-white" />
               <Star className="w-4 h-4 fill-white" />
               <Star className="w-4 h-4 fill-white" />
-              <Star className="w-4 h-4 fill-white/50 text-white/50" />
+              <Star className="w-4 h-4 fill-white" />
             </div>
+            <p className="text-lg">Nathan Brown</p>
             <p className="text-white text-sm font-medium leading-relaxed mb-4">
-              We completed 85% success project in business
+            CFP®, ChFC®, CLU®, RICP®
             </p>
             {/* Tiny Graph Decoration */}
             <div className="h-8 flex items-end gap-1 opacity-50">
@@ -135,9 +134,9 @@ export const Hero: React.FC = () => {
           {/* Floating Card 3: Pie Chart (Bottom Right) */}
           <div className="absolute bottom-[10%] right-0 lg:right-[10%] bg-white p-5 rounded-3xl shadow-2xl z-30 w-72">
             <div className="flex gap-4 mb-4 text-[10px] font-medium text-gray-500">
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-darker"></span> Invest</div>
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-400"></span> Goal</div>
-               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-200"></span> Finance</div>
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-darker"></span> 401K</div>
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-400"></span> RSU</div>
+               <div className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-gray-200"></span> ESPP</div>
             </div>
             <div className="relative w-40 h-40 mx-auto">
                {/* SVG Pie Chart */}
