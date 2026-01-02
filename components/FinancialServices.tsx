@@ -41,7 +41,7 @@ export const FinancialServices: React.FC = () => {
           </span>
           
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.15] mb-8">
-            Comprehensive Financial Planning and Analysis
+            Tax Strategy for Senior Engineers & Tech Executives
           </h1>
           
           <button className="group relative inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-3.5 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
