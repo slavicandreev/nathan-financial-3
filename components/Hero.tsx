@@ -18,16 +18,15 @@ export const Hero: React.FC = () => {
            <div className="w-5 h-5 relative">
              <ArrowUpRight className="text-white w-full h-full" strokeWidth={3} />
            </div>
-           <span className="text-xl font-bold tracking-wide">FINXPERT.</span>
+           <span className="text-xl font-bold tracking-wide">TAX RELIEF SECRETS</span>
         </div>
 
         <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
           <a href="#" className="text-white flex items-center gap-1">HOME <span className="text-[10px]">▼</span></a>
-          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">PAGES <span className="text-[10px]">▼</span></a>
-          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">SERVICES <span className="text-[10px]">▼</span></a>
-          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">PORTFOLIO <span className="text-[10px]">▼</span></a>
-          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">BLOG <span className="text-[10px]">▼</span></a>
-          <a href="#" className="hover:text-white transition-colors">CONTACT</a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">HOW WE HELP<span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">WHO WE HELP<span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">RESOURCES<span className="text-[10px]">▼</span></a>
+          <a href="#" className="hover:text-white transition-colors flex items-center gap-1">ABOUT<span className="text-[10px]">▼</span></a>
         </div>
 
         <div className="hidden lg:flex items-center gap-6">
@@ -55,29 +54,23 @@ export const Hero: React.FC = () => {
         {/* Left Text Content */}
         <div className="w-full lg:w-1/2 mb-16 lg:mb-0 lg:pr-12">
           <span className="block text-gray-400 text-xs font-bold tracking-[0.2em] uppercase mb-6">
-            Financial Futures
+            We help our clients financial lives go from great to outstanding
           </span>
           
           <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1] mb-8">
             <span className="text-white">Smart Strategies</span> <br />
-            <span className="text-white/30">for Wealth Growth</span> <br />
-            <span className="text-white">Financiers.</span>
+            <span className="text-white/30">for Wealth Growth</span>
           </h1>
           
           <p className="text-gray-400 text-lg leading-relaxed max-w-xl mb-12">
-            Achieving long-term financial success requires smart strategies for wealth growth, guided by expert financiers.
+            Enabling your financial success, through equity, compensation planning and W-2 tax reduction
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             {/* Google Play Button */}
             <button className="flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3 transition-all">
-              <div className="w-8 h-8 flex items-center justify-center">
-                 {/* Simple Play Icon to represent Google Play store */}
-                 <Play className="w-6 h-6 fill-white text-white" />
-              </div>
               <div className="text-left">
-                <div className="text-[10px] uppercase font-medium text-gray-300 leading-none mb-1">Android App on</div>
-                <div className="text-sm font-bold text-white leading-none">Google Play</div>
+                <div className="text-sm font-bold text-white leading-none">GET IN TOUCH <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" /></div>
               </div>
             </button>
 
